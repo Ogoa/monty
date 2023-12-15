@@ -16,6 +16,8 @@ void execute_opcode(char *line, stack_t **stack, unsigned int line_number)
 	void (*func)(stack_t **stack, unsigned int line_number);
 
 	opcode = strtok(line, " \n\t");
+	if (strcmp(opcode, "nop") == 0)
+		return;
 	val = strtok(NULL, " \n\t");
 	func = get_opcode(opcode);
 	if (func == NULL)
