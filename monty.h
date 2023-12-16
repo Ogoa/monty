@@ -48,7 +48,7 @@ void mul_opcode(stack_t **stack, unsigned int line_number);
 void mod_opcode(stack_t **stack, unsigned int line_number);
 void pchar_opcode(stack_t **stack, unsigned int line_number);
 void pstr_opcode(stack_t **stack, unsigned int line_number);
-
+void rotl_opcode(stack_t **stack, unsigned int line_number);
 
 /**
  * struct instruction_s - Opcode and its function
