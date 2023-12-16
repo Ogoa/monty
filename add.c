@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * add - Adds the top two elements of the stack
+ * add_opcode - Adds the top two elements of the stack
  * @stack: Address of the pointer to the node at the top of the stack
  * @line_number: Line number of the opcode in the monty file
  *
@@ -11,7 +11,7 @@
  * The top element of the stack contains the result
  * The stack is one element shorter
  */
-void add(stack_t **stack, unsigned int line_number)
+void add_opcode(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 

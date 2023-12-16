@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * sub - Evaluates the difference of the top two elements in the stack
+ * sub_opcode - Evaluates the difference of the top two elements in the stack
  * @stack: Address of the pointer to the node at the top of the stack
  * @line_number: Line number of the opcode in the monty file
  *
@@ -11,7 +11,7 @@
  * The top element of the stack contains the result
  * The stack is one element shorter
  */
-void sub(stack_t **stack, unsigned int line_number)
+void sub_opcode(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 

@@ -41,8 +41,9 @@ void print_stack(stack_t **stack, unsigned int line_number);
 void print_top(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 void swap(stack_t **stack, unsigned int line_number);
-void add(stack_t **stack, unsigned int line_number);
-void sub(stack_t **stack, unsigned int line_number);
+void add_opcode(stack_t **stack, unsigned int line_number);
+void sub_opcode(stack_t **stack, unsigned int line_number);
+void div_opcode(stack_t **stack, unsigned int line_number);
 
 /**
  * struct instruction_s - Opcode and its function
